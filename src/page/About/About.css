@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+.about {
+    width: 100%;
+    background: linear-gradient(45deg, #dff4e4 0%, #f0ddee 24%, #dee7f5 49%, #e9dae4 73%, #cbffff 100%);
+    padding: 50px 0 30px 22%;
+}
+
+.btn1 {
+    width: 120px;
+    height: 6vh;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(26, 31, 54, 0.45);
+    font-weight: 600;
+}
+
+.btn1 span {
+    color: orangered;
+    font-size: 16px;
+}
+
+.about h1 {
+    margin-top: 25px;
+    font-weight: 900;
+}
+
+.about-infobox {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-left {
+    width: 30%;
+}
+
+.about-left img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.about-right {
+    width: 70%;
+    padding: 0 60px 0 20px;
+}
+
+.bio {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px rgba(26, 31, 54, 0.45);
+}
+
+.bio p {
+    margin-top: 15px;
+    line-height: 25px;
+    color: #7f7c86;
+    font-weight: 600;
+}
+
+.bio-info {
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px rgba(26, 31, 54, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.bio-info-left {
+    width: 50%;
+    padding: 0 15px 0 15px;
+}
+
+.bio-info-right {
+    width: 50%;
+    padding: 0 15px 0 15px;
+}
+
+.bio-info-left div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bio-info-left div span {
+    color: #7f7c86;
+}
+
+.bio-info-right div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bio-info-right div span {
+    color: #7f7c86;
+}
+
+.bio-info-left div p {
+    font-weight: 600;
+}
+
+.bio-info-right div p {
+    font-weight: 600;
+}
+
+.btn2 {
+    margin-top: 4%;
+    width: 135px !important;
+    height: 6vh;
+}
+
+.education-box {
+    width: 100%;
+    margin-top: 3%;
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    row-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 470px;
+    height: 250px;
+    background-color: whitesmoke;
+    position: relative;
+    border-radius: 10px;
+    padding: 30px 20px 20px 20px;
+    transition: 1s;
+    box-shadow: 1px 1px 4px rgba(26, 31, 54, 0.45);
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+.box:hover.box button {
+    background-color: #f0ddee;
+    color: #df00ff;
+    border: none;
+    box-shadow: 1px 1px 4px rgba(26, 31, 54, 0.45);
+}
+
+.box:hover .p2 {
+    color: black;
+}
+
+.box button {
+    width: 110px;
+    height: 5vh;
+    position: absolute;
+    top: -15px;
+    left: 25px;
+    border-radius: 20px;
+    box-shadow: none;
+    border: 2px solid rgb(78, 76, 76);
+    background-color: white;
+    color: gray;
+    font-weight: 800;
+    transition: 1s;
+}
+
+.p1 {
+    margin-top: 3px;
+    font-weight: 800;
+    color: #df00ff;
+    font-size: 15px;
+}
+
+.p2 {
+    margin-top: 10px;
+    font-weight: bolder;
+    color: gray;
+    transition: 1s;
+}
+
+.p3 {
+    margin-top: 6%;
+    font-size: 17px;
+    line-height: 22px;
+    color: gray;
+}
+
+.bookmarkBtn {
+    width: 140px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-left: 6px;
+}
+
+.bookmarkBtn:hover {
+    background-color: white;
+}
+
+.bookmarkBtn a{
+    text-decoration: none;
+    color: black;
+}
+
+.IconContainer {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: 0.3s;
+}
+
+.icon {
+    border-radius: 1px;
+    font-size: 20px;
+}
+
+.text {
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    z-index: 1;
+    transition-duration: 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.bookmarkBtn:hover .IconContainer {
+    width: 126px;
+    transition-duration: 0.3s;
+}
+
+.bookmarkBtn:hover .text {
+    transform: translate(10px);
+    width: 0;
+    font-size: 0;
+    transition-duration: 0.3s;
+}
+
+.bookmarkBtn:active {
+    transform: scale(0.95);
+    transition-duration: 0.3s;
+}
+
+@media screen and (max-width:1090px) and (min-width:980px) {
+    .about-right {
+        padding-right: 20px;
+        width: 60%;
+    }
+
+    .about-left {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:980px) and (min-width:800px) {
+    .about {
+        padding-left: 5%;
+    }
+
+    .about-left {
+        width: 35%;
+    }
+
+    .about-right {
+        width: 65%;
+        padding: 0 20px 0 25px;
+    }
+
+    .about-infobox {
+        align-items: flex-start;
+    }
+
+    .about-left img {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width:800px) and (min-width:600px) {
+    .about {
+        padding-left: 5%;
+    }
+
+    .about-infobox {
+        flex-direction: column;
+        padding-right: 3%;
+    }
+
+    .about-left {
+        width: 100%;
+        height: 55vh;
+        align-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+        background-image: url(/src/assets/Images/about\ img.JPG);
+        background-repeat: no-repeat;
+        background-size: 130%;
+        background-position: 95% 45%;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+
+    .about-left img {
+        display: none;
+    }
+
+    .about-right {
+        width: 100%;
+        padding: 10px 20px 10px 10px;
+    }
+
+    .education-box {
+        padding-right: 35px;
+        padding-top: 40px;
+    }
+
+    .box {
+        width: 85%;
+    }
+
+    .box button {
+        height: 6vh;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:400px) {
+    .about {
+        padding-left: 5%;
+    }
+
+    .about-infobox {
+        flex-direction: column;
+        padding-right: 3%;
+    }
+
+    .about-left {
+        width: 100%;
+        height: 55vh;
+        align-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+        background-image: url(/src/assets/Images/about\ img.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 95% 45%;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+
+    .about-left img {
+        display: none;
+    }
+
+    .about-right {
+        width: 100%;
+        padding: 10px 20px 10px 10px;
+    }
+
+    .education-box {
+        padding-right: 25px;
+        padding-top: 40px;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .box button {
+        height: 6vh;
+    }
+
+    .bio-info{
+        flex-direction: column;
+    }
+
+    .bio-info-left,.bio-info-right{
+        width: 100%;
+    }
+    .bio p{
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .btn2{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:400px) and (min-width:320px) {
+    .about {
+        padding-left: 5%;
+    }
+
+    .about-infobox {
+        flex-direction: column;
+        padding-right: 3%;
+    }
+
+    .about-left {
+        width: 100%;
+        height: 55vh;
+        align-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+        background-image: url(/src/assets/Images/about.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 95% 45%;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+
+    .about-left img {
+        display: none;
+    }
+
+    .about-right {
+        width: 100%;
+        padding: 10px 20px 10px 10px;
+    }
+
+    .education-box {
+        padding-right: 25px;
+        padding-top: 40px;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .box button {
+        height: 5vh;
+        font-size: 11px;
+        width: 95px;
+    }
+
+    .bio-info{
+        flex-direction: column;
+    }
+
+    .bio-info-left,.bio-info-right{
+        width: 100%;
+    }
+    .bio p{
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .btn2{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .p1{
+        font-size: 12px;
+    }
+
+    .p2{
+        font-size: 11px;
+    }
+
+    .p3{
+        font-size: 11px;
+        line-height: 19px;
+    }
+}

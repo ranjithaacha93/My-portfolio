@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project{
+    width: 100%;
+    background: linear-gradient(45deg, #dff4e4 0%, #f0ddee 24%, #dee7f5 49%, #e9dae4 73%, #cbffff 100%);
+    padding: 50px 0 50px 22%;
+}
+
+.btn1{
+    width: 120px;
+    height: 5vh;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(26, 31, 54, 0.45);
+    font-weight: 600;
+}
+
+.btn1 span{
+    color: orangered;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.project-boxs{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0 0 0;
+    row-gap: 40px;
+}
+
+.project-bottom{
+    position: absolute;
+    bottom: -55%;
+    width: 100%;
+    height: 20vh;
+    background-image: linear-gradient(to top, black, transparent);
+    transition: 1s;
+    padding: 15px;
+}
+
+.project-box:hover .project-bottom{
+    bottom: 0;
+}
+
+.project-bottom h3{
+    color: rgb(60, 255, 0);
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+.project-bottom h3 span{
+    font-size: 15px;
+    color: yellow;
+    font-weight: 400;
+}
+
+.project-btn1{
+    width: 110px;
+    height: 4.5vh;
+    background-color: rgb(157, 241, 213);
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    align-content: center;
+    font-weight: 600;
+}
+
+.project-btn2{
+    width: 100px;
+    height: 4.5vh;
+    background-color: rgb(118, 122, 121);
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    align-content: center;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.project-top{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(128, 128, 128, 0.733);
+    scale: 0.1;
+    opacity: 0;
+    transition: 1s;
+    border-radius: 15px;
+}
+
+.project-box:hover .project-top{
+    scale: 1.1;
+    opacity: 1;
+}
+
+.project-box{
+    width: 450px;
+    height: 250px;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.backimg1{
+    background-image: url(../../assets/Images/api.png);
+}
+
+.backimg2{
+    background-image: url(../../assets/Images/cormo.png);
+}
+
+.backimg3{
+    background-image: url(../../assets/Images/education.png);
+}
+
+.backimg4{
+    background-image: url(../../assets/Images/food.png);
+}
+
+.backimg5{
+    background-image: url(../../assets/Images/four.png);
+}
+
+.project-bottom button a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:980px) and (min-width:700px) {
+    .project{
+        padding-left: 4%;
+    }
+    .project-bottom{
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:500px) {
+    .project{
+        padding-left: 4%;
+        padding-right: 20px;
+    }
+    .project-bottom{
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width:500px) and (min-width:320px) {
+    .project{
+        padding-left: 4%;
+        padding-right: 20px;
+    }
+    .project-bottom{
+        height: 25vh;
+    }
+}

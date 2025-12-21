@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact{
+    width: 100%;
+    background: linear-gradient(45deg, #dff4e4 0%, #f0ddee 24%, #dee7f5 49%, #e9dae4 73%, #cbffff 100%);
+    padding: 50px 0 50px 22%;
+}
+
+.btn1{
+    width: 130px;
+    height: 5vh;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(26, 31, 54, 0.45);
+    font-weight: 600;
+}
+
+.contact h1{
+    font-size: 35px;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.contact-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin-top: 35px;
+}
+
+.contact-box1,.contact-box2,.contact-box3{
+    width: 270px;
+    height: 100px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.contact-box1 span{
+    font-size: 35px;
+    background-color: #e6e1ff;
+    padding: 15px 11px 5px 11px;
+    border-radius: 50%;
+    color: rgb(32, 32, 236);
+}
+
+.contact-box1 h4{
+    font-weight: 800;
+    margin-bottom: 7px;
+    color: red;
+}
+
+.contact-box2 span{
+    font-size: 30px;
+    background-color: #ffd9c9;
+    padding: 15px 12px 5px 13px;
+    border-radius: 50%;
+    color: #ff6b2d;
+}
+
+.contact-box2 h4{
+    font-weight: 800;
+    margin-bottom: 7px;
+    color: red;
+}
+
+.contact-box3 span{
+    font-size: 30px;
+    background-color: #ffd5df;
+    padding: 15px 12px 5px 13px;
+    border-radius: 50%;
+    color: #ff4d79;
+}
+
+.contact-box3 h4{
+    font-weight: 800;
+    margin-bottom: 7px;
+    color: red;
+}
+
+.contact-bottom{
+    width: 100%;
+    margin-top: 35px;
+}
+
+.contact-bottom h2{
+    font-size: 25px;
+}
+
+.input-1,.input-2{
+    width: 420px;
+    height: 7vh;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 20px 20px 20px 30px;
+}
+
+.contact-bottom input:focus{
+    border: 1px solid red;
+}
+
+.input-3{
+    width: 890px;
+    height: 7vh;
+    margin: 20px 20px 20px 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.input-4{
+    width: 890px;
+    height: 25vh;
+    margin: 20px 20px 20px 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.contact-bottom button{
+    width: 180px;
+    height: 8vh;
+    background-color: #ffd9c9;
+    border: none;
+    color: orangered;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.contact-bottom button:hover{
+    background-color: transparent;
+    border: 2px solid orangered;
+}
+
+@media screen and (max-width:980px) and (min-width:700px) {
+    .contact{
+        padding-left: 5%;
+    }
+    .input-1,.input-2,.input-3{
+        width: 500px;
+    }
+    .input-4{
+        width: 500px;
+        height: 35vh;
+    }
+    .contact-bottom{
+        text-align: center;
+    }
+    .contact-top{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:500px) {
+    .contact{
+        padding-left: 5%;
+    }
+    .input-1,.input-2,.input-3{
+        width: 400px;
+    }
+    .input-4{
+        width: 400px;
+        height: 35vh;
+    }
+    .contact-bottom{
+        text-align: center;
+    }
+    .contact-box1,.contact-box2,.contact-box3{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:500px) and (min-width:320px) {
+    .contact{
+        padding-left: 4%;
+    }
+    .input-1,.input-2,.input-3{
+        max-width: 95%;
+        margin: 10px 0px 0px 0px;
+    }
+    .input-4{
+        max-width: 95%;
+        height: 35vh;
+        margin: 10px 0px 0px 0px;
+    }
+    .contact-bottom button{
+        margin-left: 0px;
+    }
+    .contact-box1,.contact-box2,.contact-box3{
+        width: 300px;
+    }
+    .contact-top{
+        padding-right: 10px;
+    }
+}
